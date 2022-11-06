@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/PEclasscss.css">
+    <title>In A World That Can't Stop Talking</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
+  </head>
+  <body>
+<div class="content1">
+<div class="title">
+  <p >All of these just remind me of highschool...</p>
+</div>
+  <div class="pic1" id="pic1">
+    <p id="p1">In PE class, we usually practise in pairs</p>
+  </div>
+  <div class="pic2" id="pic2">
+    <p id="p2">I was often the one left</p>
+  </div>
+  <div class="pic3" id="pic3">
+    <p id="p3">I don't know if it's because I was not good at sports...</p>
+  </div>
+  <div class="pic4" id="pic4">
+    <p id="p4">...or just because I was too <span id="S">quiet</span></p>
+  </div>
+</div>
+<audio id="a1" src="audios/Memory.mp3" autoplay loop>
+
+</audio>
+<script>
+$(document).ready(function(){
+  $(".pic1").mouseover(function(){
+  $(this).css("cursor","Pointer");
+    $("#img8").css("cursor","Pointer");
+});
+  $(".pic1").click(function(){
+    $(this).css({'opacity': 1});
+    $("#p1").fadeIn();
+    $(".pic2").css("cursor","Pointer");
+  });
+  $(".pic2").click(function(){
+    $(this).css({'opacity': 1});
+    $("#p2").fadeIn();
+    $(".pic3").css("cursor","Pointer");
+  });
+  $(".pic3").click(function(){
+    $(this).css({'opacity': 1});
+    $("#p3").fadeIn();
+    $(".pic4").css("cursor","Pointer");
+  });
+  $(".pic4").click(function(){
+    $(this).css({'opacity': 1});
+    $("#p4").fadeIn();
+  });
+$("#p4").click(function(){
+window.location.href = "index5.html"
+});
+$("#S").mouseover(function(){
+  $("#S").css({
+  'color':'#2980B9'
+  });
+  $("#a1").prop('volume',0);
+});
+$("#S").mouseleave(function(){
+  $("#a1").prop('volume',1);
+  $("#S").css({
+  'color':'white'
+  });
+});
+});
+</script>
+  </body>
+  <script type="text/javascript" src="js/PEjs.js">
+
+  </script>
+</html>

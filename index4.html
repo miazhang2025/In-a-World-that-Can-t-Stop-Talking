@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/page4css.css">
+<link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
+    <script src="https://use.typekit.net/nlq1kdt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>In A World That Can't Stop Talking</title>
+  </head>
+  <body>
+<div class="content">
+  <video id="background_video" loop muted></video>
+  <div id="video_cover"></div>
+  <div id="overlay"></div>
+  <div class="title">
+    <span class="part"> PART III</span>  <br>The<br>Elevator
+  </div>
+  <div class="p0">
+    <p id="p1">Who is there</p>
+    <p id="p2">I think I know him... I met him in the morning right?</p>
+    <p id="p3">I think he is Richard</p>
+    <p id="p4">Does he remember me though?</p>
+    <p id="p5">But he probably didn’t see me...</p>
+    <p id="p6">he’s on his phone</p>
+    <p id="p7">Should I say hi?</p>
+    <p id="p8">Oh no, the elevator arrived...</p>
+    <p id="p9">...</p>
+  </div>
+  <div class="middle">
+    <button class="btn1">YES</button>
+    <button class="btn2">NO</button>
+  </div>
+</div>
+<audio id="a1" src="audios/elevator1.mp3">
+</audio>
+<audio id="a2"src="audios/elevator2.mp3">
+
+</audio>
+<script>
+$(document).ready(function(){
+$(".p0").mouseover(function(){
+$(this).css("cursor","Pointer");
+    });
+$("#p1").click(function(){
+$("#p2").fadeIn(3000);
+$("#p1").fadeOut("fast");
+});
+$("#p2").click(function(){
+$("#p3").fadeIn(3000);
+$("#p2").fadeOut("fast");
+});
+$("#p3").click(function(){
+$("#p4").fadeIn(3000);
+$("#p3").fadeOut("fast");
+});
+$("#p4").click(function(){
+$("#p5").fadeIn(3000);
+$("#p4").fadeOut("fast");
+});
+$("#p5").click(function(){
+$("#p6").fadeIn(3000);
+$("#p5").fadeOut("fast");
+});
+$("#p6").click(function(){
+$("#p7").fadeIn(3000);
+$("#p6").fadeOut("fast");
+});
+$("#p7").click(function(){
+$(".middle").fadeIn(3000);
+});
+$(".btn1").click(function(){
+document.getElementById('a2').play();
+$("#p8").fadeIn(8000);
+$(".middle").fadeOut("fast");
+$("#p7").fadeOut("fast");
+});
+$("#p8").click(function(){
+$("#p9").fadeIn(3000);
+$("#p8").fadeOut("fast");
+});
+$("#p9").click(function(){
+  window.location.href="PEclass.html";
+  });
+  $(".btn2").click(function(){
+  $("#p9").fadeIn(3000);
+  $(".middle").fadeOut("fast");
+  $("#p7").fadeOut("fast");
+  });
+});
+</script>
+  </body>
+  <script type="text/javascript" src="js/page4js.js">
+</script>
+<script src="bideo.js"></script>
+<script src="main2.js"></script>
+</html>

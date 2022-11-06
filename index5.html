@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/page5css.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
+    <title>In A World That Can't Stop Talking</title>
+  </head>
+  <body>
+<div class="content">
+  <div class="title">
+      <span class="part"> PART IV</span><br>Let Me<br>Talk To Your Silence
+  </div>
+  <div class="p0">
+    <p id="p1">...</p>
+    <p id="p2">"Hey, Alex!"</p>
+    <p id="p3">"Hi, Helen."</p>
+    <p id="p4">"where are you going"</p>
+    <p id="p5">"To the class"</p>
+    <p id="p6">"Which class"</p>
+    <p id="p7">"Communications Lab..."</p>
+    <p id="p8">"OMG we are taking the same class!"</p>
+    <p id="p9">"I heard the class is really interesting,the professors are nice , too! I'm so excited! I have a friend......"</p>
+  </div>
+</div>
+<audio src="audios/Last.mp3" autoplay>
+</audio>
+<audio id="a1"src="audios/l1.mp3" >
+</audio>
+<audio id="a2"src="audios/l2.mp3" >
+</audio>
+<audio id="a3"src="audios/l3.mp3" >
+</audio>
+<audio id="a4"src="audios/l4.mp3" >
+</audio>
+<audio id="a5"src="audios/l5.mp3" >
+</audio>
+<script>
+$(document).ready(function(){
+  var audio1 = $("#a1")[0];
+  var audio2 = $("#a2")[0];
+  var audio3 = $("#a3")[0];
+  var audio4 = $("#a4")[0];
+  var audio5 = $("#a5")[0];
+$(".p0").mouseover(function(){
+$(this).css("cursor","Pointer");
+    });
+$("#p1").click(function(){
+$("#p2").fadeIn(3000);
+$("#p1").fadeOut("fast");
+audio1.play();
+});
+$("#p2").click(function(){
+$("#p3").fadeIn(3000);
+$("#p2").fadeOut("fast");
+});
+$("#p3").click(function(){
+$("#p4").fadeIn(3000);
+$("#p3").fadeOut("fast");
+audio2.play();
+});
+$("#p4").click(function(){
+$("#p5").fadeIn(3000);
+$("#p4").fadeOut("fast");
+});
+$("#p5").click(function(){
+$("#p6").fadeIn(3000);
+$("#p5").fadeOut("fast");
+audio3.play();
+});
+$("#p6").click(function(){
+$("#p7").fadeIn(3000);
+$("#p6").fadeOut("fast");
+});
+$("#p7").click(function(){
+$("#p8").fadeIn(3000);
+$("#p7").fadeOut("fast");
+audio4.play();
+});
+$("#p8").click(function(){
+$("#p9").fadeIn(3000);
+$("#p8").fadeOut("fast");
+audio5.play();
+});
+$("#p9").click(function(){
+window.location.href="endpage.html"
+});
+});
+</script>
+  </body>
+</html>

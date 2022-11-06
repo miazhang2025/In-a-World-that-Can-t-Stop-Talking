@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/page3css.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    </script>
+    <script src="https://use.typekit.net/nlq1kdt.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>In A World That Can't Stop Talking</title>
+  </head>
+  <body>
+    <div class="content">
+      <video id="background_video" loop muted></video>
+      <div id="video_cover"></div>
+      <div id="overlay"></div>
+      <div class="title">
+    <span class="part"> PART II</span>  <br>I Like For You <br>To Be Still
+      </div>
+      <div class="poem" id="poem">
+I like for you to be still
+<br>It is as though you are absent
+<br>And you hear me from far away
+<br>And my voice does not touch you
+<br>...
+<br>Let me talk to your silence
+</div>
+<div class="p0">
+  <p id="p1">"...This Poem is written by a Chilean poet Pablo Neruda who won the Nobel Prize in Literature in 1971..."</p>
+  <p id="p2">"...Anyone wants to talk about your understandng of these lines?..."</p>
+  <p id="p3">"That person they're talking to probably just thinks she's annoying, right?"</p>
+  <p id="p4">"Or maybe they used to be lovers? It seems so sad."</p>
+  <p id="p5">This is about a <span id="L1">lover</span>-No, this text refers to one reaching to another <span id="L2">loved</span> one, but they don't <span id="L3">love</span> her back.</p>
+  <p id="p6">This line portrays a feeling of <span id="s">sadness</span>, because the author is pleading for them to listen and accept, as they are slowly <span id="w">walking further away</span></p>
+  <p id="p7">This-</p>
+  <p id="p8">Should I say something?</p>
+  <p id="p9">Classroom bell rings...</p>
+  <p id="p10">Someone else speaks up.</p>
+</div>
+<div class="middle">
+  <button class="btn1">YES</button>
+  <button class="btn2">NO</button>
+</div>
+</div>
+<audio id="a1"src="audios/poem.mp3" loop>
+</audio>
+<audio id="a2"src="audios/classroom.mp3">
+</audio>
+<audio id="a3"src="audios/classmate1.mp3">
+</audio>
+<audio id="a4"src="audios/classmate2.mp3">
+</audio>
+<script>
+$(document).ready(function(){
+  var audio1 = $("#a2")[0];
+  var audio2 = $("#a3")[0];
+  var audio3 = $("#a4")[0];
+$(".poem").mouseover(function(){
+$(this).css("cursor","Pointer");
+});
+$(".p0").mouseover(function(){
+$(this).css("cursor","Pointer");
+});
+$("#poem").click(function(){
+$("#p1").fadeIn(3000);
+$("#poem").fadeOut();
+$("#background_video").css({"opacity":1})
+});
+$("#p1").click(function(){
+$("#p2").fadeIn(3000);
+$("#p1").fadeOut();
+audio1.play()
+});
+$("#p2").click(function(){
+$("#p3").fadeIn(3000);
+$("#p2").fadeOut();
+audio2.play()
+});
+$("#p3").click(function(){
+$("#p4").fadeIn(3000);
+$("#p3").fadeOut();
+audio3.play()
+});
+$("#p4").click(function(){
+$("#p5").fadeIn(3000);
+$("#p4").fadeOut();
+});
+$("#p5").click(function(){
+$("#p6").fadeIn(3000);
+$("#p5").fadeOut();
+});
+$("#p6").click(function(){
+$("#p7").fadeIn(3000);
+$("#p6").fadeOut();
+});
+$("#p7").click(function(){
+$("#p8").fadeIn(3000);
+$("#p7").fadeOut();
+});
+$("#p8").click(function(){
+$(".middle").fadeIn(3000);
+});
+$(".btn1").click(function(){
+$("#p9").fadeIn(8000);
+$(".middle").fadeOut("fast");
+$("#p8").fadeOut("fast");
+});
+$("#p9").click(function(){
+  window.location.href="index4.html";
+  });
+  $(".btn2").click(function(){
+  $("#p10").fadeIn(8000);
+  $(".middle").fadeOut("fast");
+  $("#p8").fadeOut("fast");
+  });
+  $("#p10").click(function(){
+    window.location.href="index4.html";
+    });
+    $(".btn1").mouseover(function(){
+      $("#a1").prop('volume',2);
+    });
+    $(".btn2").mouseover(function(){
+      $("#a1").prop('volume',0.25);
+    });
+    $(".btn1").mouseleave(function(){
+      $("#a1").prop('volume',1);
+    });
+    $(".btn2").mouseleave(function(){
+      $("#a1").prop('volume',1);
+    });
+    $("#L1").mouseover(function(){
+      $("#L1").css({
+      'color':'#E91E63 '
+      });
+    });
+    $("#L2").mouseover(function(){
+      $("#L2").css({
+      'color':'#E91E63 '
+      });
+    });
+    $("#L3").mouseover(function(){
+      $("#L3").css({
+      'color':'#E91E63 '
+      });
+    });
+    $("#L2").mouseover(function(){
+      $("#L2").css({
+      'color':'#E91E63 '
+      });
+    });
+    $("#L3").mouseover(function(){
+      $("#L3").css({
+      'color':'#E91E63 '
+      });
+    });
+    $("#s").mouseover(function(){
+      $("#s").css({
+      'color':'#154360'
+      });
+    });
+    $("#w").mouseover(function(){
+      $("#w").css({
+      'color':'#A6ACAF'
+      });
+    });
+});
+</script>
+  </body>
+<script type="text/javascript" src="js/page3js.js">
+
+</script>
+<script src="bideo.js"></script>
+<script src="main3.js"></script>
+</html>

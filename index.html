@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In A World That Can't Stop Talking</title>
+  </head>
+  <link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/page1css.css">
+<script src="http://code.jquery.com/jquery-3.3.1.js">
+
+</script>
+  <body>
+<div class="crowd-back">
+  <img src="images/crowds01.png" alt="">
+</div>
+<div class="content">
+<p class="title">In A World That Can't Stop Talking</p>
+<div class="middle">
+  <button class="btn" onclick="window.location.href='index2.html'">START</button>
+</div>
+</div>
+<audio src="audios/begin.mp3" id="a1" autoplay >
+</audio>
+<script type="text/javascript">
+$(window).scroll(function(){
+  var scrollPos = $(this).scrollTop();
+  $(".crowd-back").css({
+    'background-size' : 100 + scrollPos*0.1 + '%'
+  });
+  $(".content").css({
+    'opacity' : -180 +scrollPos*0.28 + '%'
+  });
+$(".btn").mouseover(function(){
+  $("#a1").prop('volume',0.25);
+});
+$(".btn").mouseleave(function(){
+  $("#a1").prop('volume',1);
+});
+});
+
+</script>
+  </body>
+
+</html>

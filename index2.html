@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Baskervville|Homemade+Apple|Monoton|Montserrat|Nanum+Myeongjo|Parisienne|Playfair+Display+SC|Satisfy&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/page2css.css">
+      <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+      </script>
+      <script src="https://use.typekit.net/nlq1kdt.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <title>In A World That Can't Stop Talking</title>
+  </head>
+  <body>
+<div class="content">
+    <video id="background_video" loop muted></video>
+    <div id="video_cover"></div>
+    <div id="overlay"></div>
+  <div class="title">PART I <br>Awkward <br> Silence</div>
+  <div class="p0" >
+     <p id="p1">In a world that can’t stop talking</p>
+     <p id="p2">I'm always in <span id="silence">silence</span>.</p>
+     <p id="p3">I try to break it</p>
+     <p id="p4">But I don’t know how</p>
+     <p id="p5">I don’t know what to say</p>
+     <p id="p6">And things just <span id="B">get worse</span></p>
+     <p id="p7">“Hi,  I’m Helen.”</p>
+     <p id="p8">“Hi, I’m Alex......Nice to meet you!”</p>
+     <p id="p9">“Nice to meet you,too!”</p>
+     <p id="p10">...</p>
+     <p id="p11">Should I <span id="ss">say something?</span></p>
+     <p id="p12">...</p>
+     <p id="p13">"I'll see you around."</p>
+     <p id="p14">...</p>
+     <p id="p15">Every time.</p>
+     <p id="p16">"Hey, my name is Richard, nice to meet you!"</p>
+     <p id="p17">"I'm Alex, nice to meet you too"</p>
+     <p id="p18">...</p>
+     <p id="p19">"Hello, what's your name, I'm Jessica"</p>
+     <p id="p20">"Hi, I'm Alex..."</p>
+     <p id="p21">...</p>
+
+  </div>
+</div>
+<audio id="a1"src="audios/crowds.mp3" loop>
+</audio>
+<audio id="Richard" src="audios/Richard.mp3">
+</audio>
+<audio id="H1"src="audios/H1.mp3">
+</audio>
+<audio id="H2"src="audios/H2.mp3">
+</audio>
+<audio id="H3"src="audios/H3.mp3">
+</audio>
+<audio id="J"src="audios/J.mp3">
+</audio>
+<script>
+    $(document).ready(function(){
+      var audioR = $("#Richard")[0];
+      var audioH1 = $("#H1")[0];
+      var audioH2 = $("#H2")[0];
+      var audioH3 = $("#H3")[0];
+     var audioJ = $("#J")[0];
+    $(".p0").mouseover(function(){
+		$(this).css("cursor","Pointer");
+				});
+    $("#p1").click(function(){
+    $("#p2").fadeIn(3000);
+    $("#p1").fadeOut("fast");
+  });
+    $("#p2").click(function(){
+    $("#p3").fadeIn(3000);
+    $("#p2").fadeOut("fast");
+  });
+    $("#p3").click(function(){
+    $("#p4").fadeIn(3000);
+    $("#p3").fadeOut("fast");
+  });
+    $("#p4").click(function(){
+    $("#p5").fadeIn(3000);
+    $("#p4").fadeOut("fast");
+  });
+    $("#p5").click(function(){
+    $("#p6").fadeIn(3000);
+    $("#p5").fadeOut("fast");
+  });
+    $("#p6").click(function(){
+    $("#p7").fadeIn(3000);
+    $("#p6").fadeOut("fast");
+    audioH1.play();
+  });
+  $("#p7").click(function(){
+  $("#p8").fadeIn(3000);
+  $("#p7").fadeOut("fast");
+});
+$("#p8").click(function(){
+$("#p9").fadeIn(3000);
+$("#p8").fadeOut("fast");
+audioH2.play()
+});
+$("#p9").click(function(){
+$("#p10").fadeIn(2000);
+$("#p9").fadeOut("fast");
+});
+$("#p10").click(function(){
+$("#p11").fadeIn(3000);
+$("#p10").fadeOut("fast");
+});
+$("#p11").click(function(){
+$("#p12").fadeIn(2000);
+$("#p11").fadeOut("fast");
+});
+$("#p12").click(function(){
+$("#p13").fadeIn(3000);
+$("#p12").fadeOut("fast");
+audioH3.play()
+});
+$("#p13").click(function(){
+$("#p14").fadeIn(2000);
+$("#p13").fadeOut("fast");
+});
+$("#p14").click(function(){
+$("#p15").fadeIn(3000);
+$("#p14").fadeOut("fast");
+});
+$("#p15").click(function(){
+$("#p16").fadeIn(3000);
+$("#p15").fadeOut("fast");
+audioR.play();
+});
+$("#p16").click(function(){
+$("#p17").fadeIn(3000);
+$("#p16").fadeOut("fast");
+});
+$("#p17").click(function(){
+$("#p18").fadeIn(2000);
+$("#p17").fadeOut("fast");
+});
+$("#p18").click(function(){
+$("#p19").fadeIn(3000);
+$("#p18").fadeOut("fast");
+audioJ.play();
+});
+$("#p19").click(function(){
+$("#p20").fadeIn(3000);
+$("#p19").fadeOut("fast");
+});
+$("#p20").click(function(){
+$("#p21").fadeIn(3000);
+$("#p20").fadeOut("fast");
+});
+$("#p21").click(function(){
+window.location.href="index3.html";
+});
+$("#silence").mouseover(function(){
+  $("#silence").css({
+  'color':'#2980B9'
+  });
+  $("#a1").prop('volume',0);
+});
+$("#silence").mouseleave(function(){
+  $("#a1").prop('volume',1);
+  $("#silence").css({
+  'color':'white'
+  });
+});
+$("#B").mouseover(function(){
+  $("#B").css({
+  'color':'#34495E'
+  });
+});
+$("#ss").mouseover(function(){
+  $("#ss").css({
+  'color':'#8E44AD'
+  });
+});
+});
+</script>
+  </body>
+  <script type="text/javascript" src="js/page2js.js">
+
+  </script>
+  <script src="bideo.js"></script>
+  <script src="main.js"></script>
+</html>
