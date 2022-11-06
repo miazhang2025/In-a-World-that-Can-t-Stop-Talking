@@ -1,0 +1,172 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.content{
+  color: #FFF;
+  width: 100%;
+  height: auto;
+}
+.title{
+font-family:'Baskervville', serif;
+padding-left: 90px;
+line-height: 90%;
+font-weight: lighter;
+text-indent: 50px;
+font-size: 80px;
+animation: myfirst 4s;
+opacity: 0;
+bottom: 30px;
+position: absolute;
+}
+@keyframes myfirst
+{
+	0%   {opacity: 0;}
+  80%  {opacity: 1;}
+	100% {opacity: 0;}
+}
+.p0{
+  font-size: 40px;
+ text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: white;
+  padding-top: 20%;
+  position: relative;
+}
+#p2{
+  display: none;
+}
+#p3{
+  display: none;
+}
+#p1{
+  opacity: 0;
+  display: none;
+}
+#p1:hover{
+  opacity: 1;
+}
+#p4{
+  display: none;
+}
+#p5{
+  display: none;
+}
+#p6{
+  display: none;
+}
+#p7{
+  display: none;
+}
+#p8{
+  display: none;
+}
+#p9{
+  display: none;
+}
+#p10{
+  display: none;
+}
+#p11{
+  display: none;
+}
+#p12{
+  display: none;
+}
+#p13{
+  display: none;
+}
+#p14{
+  display: none;
+}
+#p15{
+  display: none;
+}
+#p16{
+  display: none;
+}
+#p17{
+  display: none;
+}
+#p18{
+  display: none;
+}
+#p19{
+  display: none;
+}
+#p20{
+  display: none;
+}
+#p21{
+  display: none;
+}
+
+#p22{
+  display: none;
+}
+
+#p23{
+  display: none;
+}
+
+#p24{
+  display: none;
+}
+
+#p25{
+  display: none;
+}
+
+#p26{
+  display: none;
+}
+
+#p27{
+  display: none;
+}
+
+#p28{
+  display: none;
+}
+
+#p29{
+  display: none;
+}
+
+#p30{
+  display: none;
+}
+#silence{
+  font-weight: bold;
+  font-size: 42px;
+}
+
+
+  #background_video {
+    position: absolute;
+
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+    height: 100%; width: 100%;
+  }
+
+  #video_cover {
+    position: absolute;
+
+    width: 100%; height: 100%;
+
+    background: url('video_cover.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+#B{
+  font-weight: bold;
+}
+#ss{
+  font-weight: bold;
+}

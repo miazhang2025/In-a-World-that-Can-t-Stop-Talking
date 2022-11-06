@@ -1,0 +1,129 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+.content1{
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh);
+}
+.title{
+  font-size: 40px;
+ text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: white;
+  padding-top: 20%;
+  position: relative;
+  animation: myfirst 3s;
+  opacity: 0;
+}
+
+@keyframes myfirst
+{
+	0%   {opacity: 0;}
+  80%  {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.pic1{
+width: 40%;
+position:absolute;
+top: 0;
+background:url(PEpic1.png) no-repeat 50% 50%;
+height: calc(100vh);
+background-size: cover;
+float: left;
+opacity: 0;
+display: none;
+}
+.pic1:hover{
+  opacity: 1;
+}
+.pic2{
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  background:url(PEpic2.png) ;
+  background-size: cover;
+  left: 40%;
+  opacity: 0;
+  top: 0;
+  display: none;
+}
+.pic2:hover{
+  opacity: 1;
+}
+.pic3{
+  width: 30%;
+  height: 50%;
+  position:absolute;
+  background: url(PEpic3.png);
+  background-size: cover;
+  top: 50%;
+  left: 40%;
+opacity: 0;
+display: none;
+}
+.pic3:hover{
+  opacity: 1;
+}
+.pic4{
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  background-color: black;
+  background-size: cover;
+  top: 50%;
+  left:70%;
+opacity: 0;
+text-align: center;
+display: none;
+}
+.pic4:hover{
+opacity: 1;
+}
+#p1{
+  display: none;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  bottom: 20px;
+  font-family: Gotham Rounded Light;
+}
+#p2{
+  display: none;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  bottom: 20px;
+  font-family: Gotham Rounded Light;
+}
+#p3{
+  display: none;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  bottom: 20px;
+  font-family: Gotham Rounded Light;
+}
+#p4{
+  display: none;
+  color: white;
+  text-align: center;
+  padding-top: 40%;
+  font-size: 20px;
+  padding-left: 5%;
+  font-family: Gotham Rounded Light;
+}
+#S {
+  font-weight: bold;
+  font-size: 25px;
+}
